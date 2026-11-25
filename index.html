@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ========================================== -->
+  <!-- EDIT HERE: page title shown in the browser tab -->
+  <title>Home | Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- ========================================== -->
+  <!-- EDIT HERE: navbar (same on every page — change your name/links in all 6 files) -->
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="brand">Your<span>Name</span></a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html" data-p="about">About</a></li>
+          <li><a href="academics.html" data-p="academics">Academics</a></li>
+          <li><a href="projects.html" data-p="projects">Projects</a></li>
+          <li><a href="contact.html" data-p="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark / light mode">
+        <i data-lucide="moon" class="i-moon"></i><i data-lucide="sun" class="i-sun"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container grid g2">
+        <div>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: availability badge (delete this line when no longer available) -->
+          <span class="badge"><span class="dot"></span> Available for Internship</span>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: headline (your name / role) -->
+          <h1 style="margin-top:1rem">Hi, I'm <span>Your Name</span> — Software Engineering Student</h1>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: short intro paragraph -->
+          <p class="lead">I am a final-year Computer Science (Software Engineering) student at UTeM who enjoys building reliable web applications, databases and embedded systems. I'm looking for an internship where I can learn fast and ship real features.</p>
+          <div class="btn-row">
+            <!-- EDIT HERE: button links (CV file path: put cv.pdf in the same folder) -->
+            <a class="btn btn-primary" href="projects.html"><i data-lucide="folder-open"></i> View Projects</a>
+            <a class="btn btn-ghost" href="cv.pdf" download><i data-lucide="download"></i> Download CV</a>
+          </div>
+        </div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: profile image path (replace the src with images/profile.jpg) -->
+        <div class="photo"><img src="https://placehold.co/600x600?text=Your+Photo" alt="Portrait of Your Name"></div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Selected work</span>
+          <h2>Featured Work</h2>
+        </div>
+        <div class="grid g3">
+          <!-- ========================================== -->
+          <!-- EDIT HERE: featured project card 1 (image, title, description, tags, link) -->
+          <article class="card project-card">
+            <img src="https://placehold.co/800x450?text=Project+1" alt="Project 1 screenshot">
+            <div class="body">
+              <h3>Student Management System</h3>
+              <p>A web app for managing student records, built for a software engineering course.</p>
+              <div><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: featured project card 2 -->
+          <article class="card project-card">
+            <img src="https://placehold.co/800x450?text=Project+2" alt="Project 2 photo">
+            <div class="body">
+              <h3>IoT Smart Monitor</h3>
+              <p>An ESP32-based sensor system that sends live readings to a dashboard.</p>
+              <div><span class="tag">C++</span><span class="tag">ESP32</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: featured project card 3 -->
+          <article class="card project-card">
+            <img src="https://placehold.co/800x450?text=Project+3" alt="Project 3 diagram">
+            <div class="body">
+              <h3>Library Database Design</h3>
+              <p>A normalised relational database with ER diagrams and optimised SQL queries.</p>
+              <div><span class="tag">SQL</span><span class="tag">ERD</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- EDIT HERE: footer text and social links -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Your Name · Bachelor of Computer Science (Software Engineering), UTeM</p>
+      <div class="links">
+        <a href="https://github.com/your-username" aria-label="GitHub"><i data-lucide="github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/your-username" aria-label="LinkedIn"><i data-lucide="linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ========================================== -->
+  <!-- EDIT HERE: page title shown in the browser tab -->
+  <title>About | Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- ========================================== -->
+  <!-- EDIT HERE: navbar (same on every page — change your name/links in all 6 files) -->
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="brand">Your<span>Name</span></a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-p="index">Home</a></li>
+          <li><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li><a href="academics.html" data-p="academics">Academics</a></li>
+          <li><a href="projects.html" data-p="projects">Projects</a></li>
+          <li><a href="contact.html" data-p="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark / light mode">
+        <i data-lucide="moon" class="i-moon"></i><i data-lucide="sun" class="i-sun"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title"><div class="container">
+      <span class="eyebrow">About me</span>
+      <h1>Personal Details &amp; Qualities</h1>
+    </div></section>
+
+    <section style="padding-top:0">
+      <div class="container grid g2" style="align-items:start">
+        <!-- ========================================== -->
+        <!-- EDIT HERE: profile photo path -->
+        <div class="photo"><img src="https://placehold.co/600x600?text=Profile+Photo" alt="Profile photo of Your Name"></div>
+        <div>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: bio paragraphs -->
+          <h2>Who I Am</h2>
+          <p>I'm a Software Engineering student at Universiti Teknikal Malaysia Melaka (UTeM). I enjoy turning ideas into working systems, from clean web interfaces to hardware-connected prototypes.</p>
+          <p style="margin-top:1rem">Outside class, I explore open-source projects, take on small freelance jobs, and keep improving my problem-solving skills.</p>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: personal details list -->
+          <ul style="list-style:none;margin-top:1.5rem;display:grid;gap:.6rem">
+            <li><strong>Full name:</strong> Your Full Name</li>
+            <li><strong>Location:</strong> Melaka, Malaysia</li>
+            <li><strong>Languages:</strong> Malay, English</li>
+            <li><strong>Interests:</strong> Web development, IoT, databases, photography</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt"><div class="container">
+      <div class="section-head"><span class="eyebrow">Strengths</span><h2>Personal Qualities</h2></div>
+      <div class="grid g4">
+        <!-- ========================================== -->
+        <!-- EDIT HERE: quality card — Work Ethic -->
+        <div class="card"><div class="icon"><i data-lucide="target"></i></div><h3>Work Ethic</h3><p>I plan my tasks, meet deadlines, and take ownership of finishing what I start.</p></div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: quality card — Teamwork -->
+        <div class="card"><div class="icon"><i data-lucide="users"></i></div><h3>Teamwork</h3><p>I communicate openly, share credit, and support teammates during group projects.</p></div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: quality card — Analytical Thinking -->
+        <div class="card"><div class="icon"><i data-lucide="brain"></i></div><h3>Analytical Thinking</h3><p>I break big problems into small steps and test assumptions before building.</p></div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: quality card — Adaptability -->
+        <div class="card"><div class="icon"><i data-lucide="refresh-cw"></i></div><h3>Adaptability</h3><p>I pick up new tools and languages quickly and adjust when requirements change.</p></div>
+      </div>
+    </div></section>
+
+    <section><div class="container">
+      <div class="section-head"><span class="eyebrow">Toolbox</span><h2>Skills</h2></div>
+      <div class="grid g3">
+        <!-- ========================================== -->
+        <!-- EDIT HERE: skill group — Programming -->
+        <div class="card skill-group"><h3><i data-lucide="code-2"></i> Programming</h3><ul><li>Java</li><li>Python</li><li>C / C++</li><li>JavaScript</li><li>PHP</li></ul></div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: skill group — Web &amp; Database -->
+        <div class="card skill-group"><h3><i data-lucide="database"></i> Web &amp; Database</h3><ul><li>HTML / CSS</li><li>MySQL</li><li>PostgreSQL</li><li>REST APIs</li></ul></div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: skill group — Tools &amp; Hardware -->
+        <div class="card skill-group"><h3><i data-lucide="wrench"></i> Tools &amp; Hardware</h3><ul><li>Git / GitHub</li><li>VS Code</li><li>Arduino / ESP32</li><li>Figma</li></ul></div>
+      </div>
+    </div></section>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- EDIT HERE: footer text and social links -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Your Name · Bachelor of Computer Science (Software Engineering), UTeM</p>
+      <div class="links">
+        <a href="https://github.com/your-username" aria-label="GitHub"><i data-lucide="github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/your-username" aria-label="LinkedIn"><i data-lucide="linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ========================================== -->
+  <!-- EDIT HERE: page title shown in the browser tab -->
+  <title>Projects | Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- ========================================== -->
+  <!-- EDIT HERE: navbar (same on every page — change your name/links in all 6 files) -->
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="brand">Your<span>Name</span></a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-p="index">Home</a></li>
+          <li><a href="about.html" data-p="about">About</a></li>
+          <li><a href="academics.html" data-p="academics">Academics</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li><a href="contact.html" data-p="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark / light mode">
+        <i data-lucide="moon" class="i-moon"></i><i data-lucide="sun" class="i-sun"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title"><div class="container">
+      <span class="eyebrow">Work produced</span>
+      <h1>Projects</h1>
+      <p>Coursework, system and hardware builds, and personal or freelance work.</p>
+    </div></section>
+
+    <section style="padding-top:0"><div class="container">
+      <!-- ========================================== -->
+      <!-- EDIT HERE: filter buttons (data-filter must match the cards' data-category) -->
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="software">Software &amp; Web</button>
+        <button class="filter-btn" data-filter="systems">Systems &amp; Hardware</button>
+        <button class="filter-btn" data-filter="database">Database</button>
+      </div>
+      <div class="grid g3" id="projectGrid">
+          <!-- ========================================== -->
+          <!-- EDIT HERE: project card — change data-category to: software, systems or database -->
+          <article class="card project-card" data-category="software">
+            <!-- EDIT HERE: image path -->
+            <img src="https://placehold.co/800x450?text=Student+System" alt="Student Management System screenshot">
+            <div class="body">
+              <h3>Student Management System</h3>
+              <p>Coursework: web app for managing student records with login and reports.</p>
+              <div><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: project card — change data-category to: software, systems or database -->
+          <article class="card project-card" data-category="software">
+            <!-- EDIT HERE: image path -->
+            <img src="https://placehold.co/800x450?text=Freelance+Website" alt="Small Business Website screenshot">
+            <div class="body">
+              <h3>Small Business Website</h3>
+              <p>Freelance: responsive website for a local business.</p>
+              <div><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: project card — change data-category to: software, systems or database -->
+          <article class="card project-card" data-category="systems">
+            <!-- EDIT HERE: image path -->
+            <img src="https://placehold.co/800x450?text=IoT+Monitor" alt="IoT Smart Monitor screenshot">
+            <div class="body">
+              <h3>IoT Smart Monitor</h3>
+              <p>Hardware build: ESP32 sensors with a live dashboard.</p>
+              <div><span class="tag">C++</span><span class="tag">ESP32</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: project card — change data-category to: software, systems or database -->
+          <article class="card project-card" data-category="systems">
+            <!-- EDIT HERE: image path -->
+            <img src="https://placehold.co/800x450?text=Linux+Server" alt="Home Linux Server screenshot">
+            <div class="body">
+              <h3>Home Linux Server</h3>
+              <p>System build: file server with automated backups.</p>
+              <div><span class="tag">Linux</span><span class="tag">Bash</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: project card — change data-category to: software, systems or database -->
+          <article class="card project-card" data-category="database">
+            <!-- EDIT HERE: image path -->
+            <img src="https://placehold.co/800x450?text=Library+DB" alt="Library Database Design screenshot">
+            <div class="body">
+              <h3>Library Database Design</h3>
+              <p>Normalised ERD and optimised SQL for a library system.</p>
+              <div><span class="tag">SQL</span><span class="tag">ERD</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+          <!-- ========================================== -->
+          <!-- EDIT HERE: project card — change data-category to: software, systems or database -->
+          <article class="card project-card" data-category="database">
+            <!-- EDIT HERE: image path -->
+            <img src="https://placehold.co/800x450?text=Sales+Analytics" alt="Sales Analytics Queries screenshot">
+            <div class="body">
+              <h3>Sales Analytics Queries</h3>
+              <p>Reporting database with views, indexes and stored procedures.</p>
+              <div><span class="tag">PostgreSQL</span></div>
+              <a class="more" href="project-detail.html">View details →</a>
+            </div>
+          </article>
+      </div>
+    </div></section>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- EDIT HERE: footer text and social links -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Your Name · Bachelor of Computer Science (Software Engineering), UTeM</p>
+      <div class="links">
+        <a href="https://github.com/your-username" aria-label="GitHub"><i data-lucide="github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/your-username" aria-label="LinkedIn"><i data-lucide="linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

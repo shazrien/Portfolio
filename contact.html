@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ========================================== -->
+  <!-- EDIT HERE: page title shown in the browser tab -->
+  <title>Contact | Your Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- ========================================== -->
+  <!-- EDIT HERE: navbar (same on every page — change your name/links in all 6 files) -->
+  <header class="nav">
+    <div class="container">
+      <a href="index.html" class="brand">Your<span>Name</span></a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-p="index">Home</a></li>
+          <li><a href="about.html" data-p="about">About</a></li>
+          <li><a href="academics.html" data-p="academics">Academics</a></li>
+          <li><a href="projects.html" data-p="projects">Projects</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark / light mode">
+        <i data-lucide="moon" class="i-moon"></i><i data-lucide="sun" class="i-sun"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title"><div class="container">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Contact</h1>
+      <p>I'm open to internship opportunities and collaborations.</p>
+    </div></section>
+
+    <section style="padding-top:0"><div class="container">
+      <div class="grid g4">
+        <!-- ========================================== -->
+        <!-- EDIT HERE: email address (keep id="emailText" — used by the Copy button) -->
+        <div class="card contact-card"><div class="icon"><i data-lucide="mail"></i></div><div>
+          <h3>Email</h3><p id="emailText">your.email@student.utem.edu.my</p>
+          <button class="btn btn-ghost" id="copyEmail" type="button"><i data-lucide="copy"></i> Copy Email</button>
+        </div></div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: GitHub link -->
+        <div class="card contact-card"><div class="icon"><i data-lucide="github"></i></div><div>
+          <h3>GitHub</h3><a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a>
+        </div></div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: LinkedIn link -->
+        <div class="card contact-card"><div class="icon"><i data-lucide="linkedin"></i></div><div>
+          <h3>LinkedIn</h3><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">linkedin.com/in/your-username</a>
+        </div></div>
+        <!-- ========================================== -->
+        <!-- EDIT HERE: location -->
+        <div class="card contact-card"><div class="icon"><i data-lucide="map-pin"></i></div><div>
+          <h3>Location</h3><p>Melaka, Malaysia</p>
+        </div></div>
+      </div>
+    </div></section>
+
+    <section class="alt"><div class="container" style="max-width:720px">
+      <h2>Send a Message</h2>
+      <!-- ========================================== -->
+      <!-- EDIT HERE: contact form (client-side only; connect to Formspree/Netlify later by adding action="...") -->
+      <form id="contactForm" class="card" novalidate>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name"><div class="error" aria-live="polite"></div></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><div class="error" aria-live="polite"></div></div>
+        <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text"><div class="error" aria-live="polite"></div></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><div class="error" aria-live="polite"></div></div>
+        <button class="btn btn-primary" type="submit"><i data-lucide="send"></i> Send Message</button>
+        <!-- EDIT HERE: confirmation message -->
+        <div class="success" id="formSuccess" tabindex="-1">✅ Thank you! Your message has been sent. I'll reply soon.</div>
+      </form>
+    </div></section>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- EDIT HERE: footer text and social links -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Your Name · Bachelor of Computer Science (Software Engineering), UTeM</p>
+      <div class="links">
+        <a href="https://github.com/your-username" aria-label="GitHub"><i data-lucide="github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/your-username" aria-label="LinkedIn"><i data-lucide="linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
